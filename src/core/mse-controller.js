@@ -164,6 +164,10 @@ class MSEController {
             this._mediaSourceObjectURL = null;
         }
     }
+    
+    checkMediaSource() {
+        console.log('test');
+    }
 
     appendInitSegment(initSegment, deferred) {
         if (!this._mediaSource || this._mediaSource.readyState !== 'open') {
